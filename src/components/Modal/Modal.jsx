@@ -1,15 +1,5 @@
 import css from "./Modal.module.css"
 
-// export const Modal = ({largeImg, onModalClose}) => {
-//   return (
-//     <div className={css.overlay} onClick={onModalClose}>
-//       <div className={css.modal}>
-//         <img src={largeImg} alt="" />
-//       </div>
-//     </div>
-//   )
-// }
-
 
 import React, { Component } from "react";
 
@@ -35,7 +25,7 @@ export class Modal extends Component {
     return (
     <div className={css.overlay} onClick={this.onModalClose}>
       <div className={css.modal}>
-        <img src={this.props.largeImg} alt="" />
+        <img src={this.props.largeImg} alt="img" />
       </div>
     </div>
   )
