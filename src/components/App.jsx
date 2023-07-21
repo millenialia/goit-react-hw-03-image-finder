@@ -20,7 +20,7 @@ export class App extends Component {
   };
 
   async componentDidUpdate(_, prevState) {
-    const { isLoading, keyword, pageNum } = this.state;
+    const { keyword, pageNum } = this.state;
     if (prevState.keyword !== keyword || prevState.pageNum !== pageNum) {
       this.setState({ isLoading: true });
       try {
